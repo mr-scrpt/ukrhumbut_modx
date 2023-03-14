@@ -1,16 +1,11 @@
-{set $team_list = json_decode(1 | resource
-: 'team_list', true)}
 <div class="team slider">
     <div class="team__inner layout__row">
         <div class="layout__row-box swiper slider__row">
             <div class="swiper-wrapper team__wrapper">
-                {foreach $team_list as $item}
-                {include
-                "file:chunk/team/team-item.tpl"}
-                {/foreach}
                 {$_modx->runSnippet('!getImageList', [
-                'tvname' => 'tv_product_main_gallery',
-                'tpl' => '@CODE: <some_chunk>'
+                'tvname' => 'team_list',
+                'tpl' => '@FILE:core/element/chunk/team/team-item.tpl',
+                'docid' => 1,
                 ])}
             </div>
         </div>
