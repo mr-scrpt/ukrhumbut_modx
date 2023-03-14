@@ -1,7 +1,7 @@
 {set $hero = json_decode(1 | resource
 : 'hero', true)}
 {set $social = json_decode(7 | resource
-: 'contact-social-list', true)}
+: 'contact_social_list', true)}
 <div class="hero">
     <div class="hero__inner layout__wrap">
         <div class="hero__imgbox">
