@@ -1,12 +1,6 @@
 {extends 'file:layout/layout-page-base.tpl'}
 {block 'content'}
-{include "file:layout/layout-header-section.tpl"
-component='header'
-layoutClass='layout__flat'
-sectionClass='layout__section_free'
-sectionInnerClass='section__inner_reset'
-sectionClass='layout__section_free'
-}
+{set $main = $modx->getObject('modResource', ['id' => 1])}
 {include "file:layout/layout-base-section.tpl"
 component= 'breadcrumbs'
 layoutClass= 'layout__wrap'
@@ -19,5 +13,19 @@ titleText= $_modx->resource.pagetitle
 layoutClass='layout__wrap'
 sectionClass=''
 sectionInnerClass='deco__bg_alt'
+}
+{include "file:layout/layout-base-section.tpl"
+component= 'team'
+titleText= $main->getTVValue('team_title')
+layoutClass= 'layout__wrap deco__text-shadow'
+sectionClass= ''
+sectionInnerClass=''
+sectionDecoText= $main->getTVValue('team_title_deco')
+}
+{include "file:layout/layout-base-section.tpl"
+component= 'donat'
+layoutClass= 'layout__wrap'
+sectionClass= ''
+sectionInnerClass='deco__bg_alt section__inner_last'
 }
 {/block}

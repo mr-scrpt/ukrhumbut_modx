@@ -10,7 +10,9 @@
             <div class="team-item__text">{$item.text}</div>
         </div>
         <div class="team-item__photobox">
-            <img src="{$item.photo}" alt="{$item.name}" class="team-item__photo">
+            <img src="{$item.photo | pthumb: 'w=240&h=240&zc=1&q=90'}"
+                 alt="{$item.name}"
+                 class="team-item__photo">
         </div>
     </div>
 </div>

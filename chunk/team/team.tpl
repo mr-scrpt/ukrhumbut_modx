@@ -8,10 +8,6 @@
                 {include
                 "file:chunk/team/team-item.tpl"}
                 {/foreach}
-                {$_modx->runSnippet('!getImageList', [
-                'tvname' => 'tv_product_main_gallery',
-                'tpl' => '@CODE: <some_chunk>'
-                ])}
             </div>
         </div>
         <div class="slider__nav team__nav">

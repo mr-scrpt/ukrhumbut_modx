@@ -18,6 +18,9 @@
     <meta name="theme-color" content="#252b31">
     <link rel="stylesheet" href="./assets/template/main/css/vendor.css">
     <link rel="stylesheet" href="./assets/template/main/css/app.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"></script>
     {include 'file:chunk/font/font.tpl'}
     <title>{$_modx->resource.longtitle}</title>
     {include 'file:chunk/favicon/favicon.tpl'}
