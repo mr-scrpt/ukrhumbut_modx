@@ -2,12 +2,7 @@
 {block 'content'}
 {set $news = $modx->getObject('modResource', ['id' => 4])}
 {set $main = $modx->getObject('modResource', ['id' => 1])}
-{include "file:layout/layout-header-section.tpl"
-layoutClass='layout__flat'
-sectionClass='layout__section_free'
-sectionInnerClass='section__inner_reset'
-sectionClass='layout__section_free'
-}
+{set $contact = $modx->getObject('modResource', ['id' => 7])}
 {include "file:layout/layout-base-section.tpl"
 component='hero'
 layoutClass='layout__flat'
@@ -57,5 +52,18 @@ layoutClass= 'layout__wrap deco__text-shadow'
 sectionClass= ''
 sectionInnerClass=''
 sectionDecoText= $main->getTVValue('team_title_deco')
+}
+{include "file:layout/layout-base-section.tpl"
+component= 'contact'
+titleText= $contact->get('pagetitle')
+layoutClass= 'layout__wrap'
+sectionClass= ''
+sectionInnerClass= 'deco__bg_alt'
+}
+{include "file:layout/layout-base-section.tpl"
+component= 'form-contact'
+layoutClass= 'layout__wrap'
+sectionClass= 'layout__section_free'
+sectionInnerClass= 'section__inner_only_bottom section__inner_last deco__bg_alt'
 }
 {/block}

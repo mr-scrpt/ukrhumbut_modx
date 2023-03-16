@@ -2,11 +2,10 @@
     <div class="team__inner layout__row">
         <div class="layout__row-box swiper slider__row">
             <div class="swiper-wrapper team__wrapper">
-                {$_modx->runSnippet('!getImageList', [
-                'tvname' => 'team_list',
-                'tpl' => '@FILE:core/element/chunk/team/team-item.tpl',
-                'docid' => 1,
-                ])}
+                {foreach $team_list as $item}
+                {include
+                "file:chunk/team/team-item.tpl"}
+                {/foreach}
             </div>
         </div>
         <div class="slider__nav team__nav">

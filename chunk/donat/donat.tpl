@@ -11,9 +11,13 @@
                     <div class="donat-item__title">{$main->getTVValue('donat_title')}</div>
                     <div class="donat-item__text">{$main->getTVValue('donat_text')}</div>
                     <div class="donat-item__buttonbox">
-                        <a href="{5 | url}" class="button button_size_l button_view_primary">
-                            <div class="button__text">Задонатити</div>
-                        </a>
+                        {include
+                        "file:chunk/button/button.tpl"
+                        text= 'Задонатити'
+                        theme= 'button_view_primary'
+                        size= 'button_size_l'
+                        other= ''
+                        href= $_modx->makeUrl(5)                        }
                     </div>
                 </div>
             </div>
