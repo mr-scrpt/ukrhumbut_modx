@@ -3,6 +3,8 @@
 {set $news = $modx->getObject('modResource', ['id' => 4])}
 {set $main = $modx->getObject('modResource', ['id' => 1])}
 {set $contact = $modx->getObject('modResource', ['id' => 7])}
+{set $about = $modx->getObject('modResource', ['id' => 3])}
+{set $donat = $modx->getObject('modResource', ['id' => 5])}
 {include "file:layout/layout-base-section.tpl"
 component='hero'
 layoutClass='layout__flat'
@@ -15,6 +17,8 @@ titleText= $_modx->resource.longtitle
 layoutClass='layout__wrap'
 sectionClass=''
 sectionInnerClass='deco__bg_alt'
+seciton_img= $main->getTVValue('about_img')
+seciton_content= $main->get('content')
 }
 {include "file:layout/layout-base-section.tpl"
 component= 'news'
@@ -44,7 +48,7 @@ component= 'donat'
 layoutClass= 'layout__wrap'
 sectionClass= ''
 sectionInnerClass='deco__bg_alt'
-data= $main
+data= $donat
 }
 {include "file:layout/layout-base-section.tpl"
 component= 'team'

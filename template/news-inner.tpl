@@ -1,6 +1,6 @@
 {extends 'file:layout/layout-page-base.tpl'}
 {block 'content'}
-{set $main = $modx->getObject('modResource', ['id' => 1])}
+{set $donat = $modx->getObject('modResource', ['id' => 5])}
 {include "file:layout/layout-base-section.tpl"
 component= 'breadcrumbs'
 layoutClass= 'layout__wrap'
@@ -28,6 +28,6 @@ component= 'donat'
 layoutClass= 'layout__wrap'
 sectionClass= ''
 sectionInnerClass='deco__bg_alt section__inner_last'
-data= $main
+data= $donat
 }
 {/block}

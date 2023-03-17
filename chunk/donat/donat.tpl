@@ -4,8 +4,8 @@
             <div class="donat-item__inner">
                 <div class="donat-item__headerbox deco__bg_gradient">
                     <div class="donat-item__header">{$data->getTVValue('donat_head')}</div>
-                    <div class="donat-item__header donat-item__header_center">{$main->getTVValue('donat_head')}</div>
-                    <div class="donat-item__header donat-item__header_end">{$main->getTVValue('donat_head')}</div>
+                    <div class="donat-item__header donat-item__header_center">{$data->getTVValue('donat_head')}</div>
+                    <div class="donat-item__header donat-item__header_end">{$data->getTVValue('donat_head')}</div>
                 </div>
                 <div class="donat-item__contentbox">
                     <div class="donat-item__title">{$data->getTVValue('donat_title')}</div>
