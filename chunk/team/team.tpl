@@ -1,3 +1,5 @@
+{set $team_list = json_decode(1 | resource
+: 'team_list', true)}
 <div class="team slider">
     <div class="team__inner layout__row">
         <div class="layout__row-box swiper slider__row">

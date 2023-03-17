@@ -22,7 +22,13 @@
                     'tplPageNextEmpty' => '',
                     ])}
                 </div>
-                {$_modx->getPlaceholder('page.nav')}
+                <div class="pagination {$paginationClass}">
+                    <div class="pagination__inner">
+                        <ul class="pagination__list">
+                            {$_modx->getPlaceholder('page.nav')}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

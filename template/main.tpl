@@ -44,6 +44,7 @@ component= 'donat'
 layoutClass= 'layout__wrap'
 sectionClass= ''
 sectionInnerClass='deco__bg_alt'
+data= $main
 }
 {include "file:layout/layout-base-section.tpl"
 component= 'team'
