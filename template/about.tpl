@@ -19,7 +19,8 @@ seciton_img= $about->getTVValue('about_img')
 seciton_content= $about->get('content')
 }
 {include "file:layout/layout-base-section.tpl"
-component= 'team'
+component= 'team-full'
+folder= 'team'
 titleText= $main->getTVValue('team_title')
 layoutClass= 'layout__wrap deco__text-shadow'
 sectionClass= ''

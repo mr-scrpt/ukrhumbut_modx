@@ -12,18 +12,13 @@
         </div>
         <div class="hero__textbox text">
             <span class="text__title title title_size_xxl title_view_secondary">
-                <span class="title__text">
-                    <!-- <span class="text__braker">Дуже важлива</span> -->
-                    <!-- <span class="text__braker">справа у дуже</span> -->
-                    <!-- <span class="text__braker">нелегкий час</span> -->
-                    {$hero[0].text_title}
-                </span>
+                <span class="title__text">{$hero[0].text_title}</span>
             </span>
-            <p class="text__item">{$hero[0].text_about}</p>
+            {$hero[0].text_about}
             <div class="hero__buttonbox">
                 <a href="{3 | url}"
                    class="button button_view_primary button_size_l button_type_link">
-                    <div class="button__text">О проекте</div>
+                    <div class="button__text">Про проєкт</div>
                 </a>
             </div>
         </div>

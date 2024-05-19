@@ -2,7 +2,7 @@
 : 'support_list', true)}
 <div class="support slider">
     <div class="support__inner layout__row">
-        <div class="layout__row-box swiper slider__row">
+        <div class="layout__row-box layout__row-box_full swiper slider__row">
             <div class="swiper-wrapper support__wrapper">
                 {foreach $support_list as $item}
                 {include

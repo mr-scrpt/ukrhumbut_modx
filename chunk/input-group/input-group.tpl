@@ -6,9 +6,10 @@
         <div class="input-group__box">
             <span class="input {$theme} {$size} {$other}">
                 <span class="input__box">
-                    <input class="input__control">
+                    <input class="input__control" name="{$name}">
                 </span>
             </span>
         </div>
+        <div class="input-group__error">{$errorText}</div>
     </div>
 </label>

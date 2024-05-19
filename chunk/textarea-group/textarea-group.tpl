@@ -6,5 +6,6 @@
         <div class="input-group__box">
             <textarea class="textarea {$theme} {$size} {$other}"></textarea>
         </div>
+        <div class="input-group__error">{$errorText}</div>
     </div>
 </label>

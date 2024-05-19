@@ -6,7 +6,7 @@
                     {$_modx->runSnippet('!pdoPage', [
                     'ajaxMode' => 'default',
                     'parents' => 4,
-                    'limit' => 2,
+                    'limit' => 10,
                     'element' => 'pdoResources',
                     'tpl' => '@FILE chunk/news/news-list-item.tpl',
                     'includeTVs' => 'news_img',
@@ -20,15 +20,9 @@
                     'tplPageNext' => '@FILE chunk/pagination/pagination-item-next.tpl',
                     'tplPagePrevEmpty' => '',
                     'tplPageNextEmpty' => '',
-                    ])}
+                    ])
                 </div>
-                <div class="pagination {$paginationClass}">
-                    <div class="pagination__inner">
-                        <ul class="pagination__list">
-                            {$_modx->getPlaceholder('page.nav')}
-                        </ul>
-                    </div>
-                </div>
+                <div class="pagination {$paginationClass}">{$_modx->getPlaceholder('page.nav')}</div>
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@
 : 'result_list', true)}
 <div class="result slider">
     <div class="result__inner layout__row">
-        <div class="layout__row-box swiper slider__row slider__row_alt">
+        <div class="layout__row-box layout__row-box_full swiper slider__row slider__row_alt">
             <div class="swiper-wrapper result__wrapper">
                 {foreach $result_list as $item}
                 {include
